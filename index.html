@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clase de js</title>
+  </head>
+  <body>
+    <script>
+      // 1) TIPOS DE DATOS
+      // Estos son los tipos de datos primitivos que existen en JS (casi todos...):
+      // Exiten 5 tipos de datos primitivos: number, string, boolean, undefined, null
+      let lives = 3
+      let timeLeft = 10.55
+      // STRINGS
+      const playerName = "goblin729" // (!) camelCase: cuando el identificador de una variable se compone de más de una palabra, las palabras que siguen a la primera van en mayúsculas
+      const username = "lAhJesSihH(*/ω＼*)" // Las strings son concatenaciones de caracteres y pueden incluir caracteres alfabéticos, caracteres numéricos, caracteres especiales y otros caracteres unicode (como emojis)
+      // BOOLEANS: datos con valor true o false
+      let isJumping = false
+      let hasLives = true
+      // Undefined: undefined es el valor de una variable a la cual no le hemos asignado ningún valor
+      let undefinedValue
+      // Null: null refleja la ausencia de valor de una variable
+      let bossLives = null // null
+
+      // 2) NOTAS ACERCA DE LAS VARIABLES:
+      const userName = "Daniel"
+      userName = "Dan" // => Error de tipo (!!!) Variables declaradas con const no son reasignables
+      // Podemos reasignar valores a las variables declaradas con la palabra clave "let"
+      // Cualquier otro valor es asignable a una variable --> JS no es un lenguaje TIPADO, a diferencia de TYPESCRIPT
+      let easiestWord = "tree"
+      easiestWord = true
+      // JS tiene tipado dinámico que nos permite asignar valores de diferente tipo a una variable
+
+      // NUMBERS
+      const totalValue = 5 / 3 // Podemos llevar todo tipo de operaciones aritméticas => +, -, *, /, **, %, ===, <, >, <=, >=
+      const moduloValue = 4 % 2 // => 0 , El resto de una división exacta
+      const flooredValue = Math.floor(totalValue)
+      const weirdNumber = (true * 2) / 2 // => Cuando JS puede, castea o transforma valores no numéricos en valores numéricos => "true" pasa a ser 1
+      const result = (2 + 2 * 5) * 10 - 3 ** 3
+
+      // STRINGS
+      const wowName = "huargen729" // => Las strings tienen la peculiaridad de tener longitud, length
+      const email = "dan" // El length de un dato es el número de caracteres que tenga
+      const bearerToken = "bearer:0xWFWFWEFWEEWFWFWINWZ"
+      // Si queremos acceder a una parte de una string como en este caso a: "0xWFWFWEFWEEWFWFWINWZ" podemos servirnos de métodos como "slice" o "substring"
+      const slicedToken = bearerToken.slice(7)
+
+      const name = "Daniel"
+      const surname = "Jiménez"
+      // Esta forma de declarar strings nos permite introducir código de JS
+      const fullName = `${name} ${surname}`
+      const absoluteValue = Math.abs(-3) // 3
+      // Para acceder a un montón de herramientas matemáticas accedemos al objeto Math : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+      const stringNumber = "2.5"
+      const castedNumber = +stringNumber // Hay un montón de formas de convertir strings a números y viceversa
+    </script>
+  </body>
+</html>
